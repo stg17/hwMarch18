@@ -1,0 +1,54 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-2">
+        <button id="add-button" class="btn btn-dark W-100">Add Person</button>
+           </div>
+        <table class="table table-hover table-bordered mt-3">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Delete/Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">New Person</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">First Name</label>
+                    <input class="form-control" id="firstName" placeholder="First Name" type="text" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Last Name</label>
+                    <input class="form-control" id="lastName" placeholder="Last Name" type="text" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Age</label>
+                    <input class="form-control" id="age" placeholder="Age" type="text" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary" id="save-person">Save</button>
+                <button class="btn btn-outline-dark" id="update-person">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/people.js"></script>
+}
